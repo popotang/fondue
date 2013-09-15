@@ -6227,7 +6227,7 @@ _aOnGetLoadedPercentCallBack = function( _aValue ) {
 	var _oConsole = _aoWin.console;
 
 	function _fConsolePrint() {
-		if (false && _oConsole && _oConsole.log) {
+		if (true && _oConsole && _oConsole.log) {
 			Function.apply.apply(_oConsole.log, [_oConsole, arguments[0]]);
 		}
 	};
@@ -6272,7 +6272,7 @@ _aOnGetLoadedPercentCallBack = function( _aValue ) {
 			if (_anLevel == _aoUndefined) {
 				return _nLogLevel;
 			}
-			_nLogLevel = _anLevel;
+			_nLogLevel = 0;
 		},
 
 		i: function() {
